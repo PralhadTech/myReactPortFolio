@@ -6,10 +6,11 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="">
+    <div className=" bg-blue-950 text-white">
       <Navbar />
       <Outlet />
       <Footer />
@@ -30,6 +31,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/skills",
+        element: <Skills />,
       },
     ],
   },
