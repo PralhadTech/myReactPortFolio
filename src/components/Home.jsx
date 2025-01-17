@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       {/* Main Container */}
-      <div className="flex flex-col md:flex-row items-center justify-center h-screen p-4 ">
+      <div className="flex flex-col md:flex-row  items-center justify-center gap-10 h-screen p-4 ">
         {/* Left Section */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h3 className="text-lg font-semibold text-gray-700">Hello, I'm</h3>
@@ -38,7 +38,7 @@ const Home = () => {
               href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-800 hover:text-black transition duration-200"
+              className="text-blue-600 hover:text-blue-800 transition duration-200"
             >
               <GitHubIcon fontSize="large" />
             </a>
@@ -54,7 +54,7 @@ const Home = () => {
               href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-700 transition duration-200"
+              className="text-blue-600 hover:text-blue-800 transition duration-200"
             >
               <XIcon fontSize="large" />
             </a>
@@ -64,18 +64,33 @@ const Home = () => {
             <button className="bg-blue-600 text-white py-2 px-4 rounded shadow-md hover:bg-blue-700 transition duration-200">
               Hire Me
             </button>
-            <button className="ml-4 bg-gray-100 text-gray-700 py-2 px-4 rounded shadow-md hover:bg-gray-200 transition duration-200">
+            <button className="ml-4 bg-gray-100 border-blue-600 border-2 text-gray-700 py-2 px-4 rounded shadow-md hover:bg-blue-600 hover:text-white transition duration-200">
               Contact Me
             </button>
           </div>
         </div>
 
         {/* Right Section */}
+        {/* Right Section */}
+        <div className="relative flex justify-center items-center">
+          {/* Animated Background Decorative Elements */}
+          <div className="absolute h-80 w-80 bg-gradient-to-br from-blue-700 to-purple-700 rounded-full blur-2xl animate-pulse -z-10"></div>
+          <div className="absolute h-80 w-80 bg-gradient-to-tl from-orange-400 to-yellow-300 rounded-full blur-lg top-10 left-10 animate-bounce -z-10"></div>
+
+          {/* Profile Image */}
+          <div className="h-60 w-60 relative">
+            <img
+              src={myimg}
+              alt="myimg"
+              className="rounded-full  shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Experience Section */}
-      <div className="flex justify-around text-white py-4 text-center">
-        <div>
+      <div className="flex justify-around  py-4 text-center">
+        <div className="border-4  h-28 w-28  rounded-full">
           <p className="text-2xl font-bold">6+</p>
           <p className="text-sm">Months of Exp</p>
         </div>
