@@ -52,7 +52,7 @@ const Navbar = () => {
         <a
           href={PralhadResume}
           download="PralhadCV.pdf"
-          className="flex items-center gap-1 hover:underline"
+          className="flex items-center gap-1 hover:underline border rounded bg-pink-400 p-1"
         >
           Download CV
           <FileDownloadIcon />
